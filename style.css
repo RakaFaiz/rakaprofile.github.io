@@ -1,0 +1,114 @@
+/* Navbar styling */
+.navbar {
+    background-color: #6200ea; /* Deep purple */
+}
+
+.navbar .navbar-brand {
+    color: #fff; /* White text for contrast */
+}
+
+/* Logo styling */
+.logo {
+    border-radius: 50%;  /* Circular logo */
+    object-fit: cover;   /* Avoid image distortion */
+    width: 40px;
+    height: 40px;
+}
+
+/* Hero section styling */
+.hero-section {
+    background-image: url('jpeg.jpg'); /* Path to the background image */
+    background-size: cover;            /* Make the image cover the whole section */
+    background-position: center;       /* Center the background image */
+    background-repeat: no-repeat;
+    min-height: 65vh;                  /* Minimum height for hero section */
+    color: #fafafa;                    /* Lighter text for better contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.text-section {
+    padding: 30px;
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adjust row alignment and spacing */
+.row.align-items-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust to better distribute content */
+    align-items: center;
+    margin-bottom: 40px; /* Add spacing between rows */
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+}
+
+p {
+    font-size: 1.15rem;
+    color: #555; /* Slightly darker text for better contrast */
+    line-height: 1.6; /* Improve readability with better line height */
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.img-fluid {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+}
+
+/* Body padding to account for fixed navbar */
+body {
+    padding-top: 70px; /* Increase padding for better balance */
+    background-color: #f4f4f4; /* Light grey background for a clean look */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 50vh;    /* Adjust hero section height for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.75rem;  /* Smaller heading size on mobile */
+    }
+
+    p {
+        font-size: 1rem;     /* Adjust paragraph size for better readability on small screens */
+    }
+
+    img {
+        max-width: 300px;    /* Limit image size on mobile */
+    }
+}
+
+/* Additional Styling for Consistency */
+.text-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
